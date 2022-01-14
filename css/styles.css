@@ -124,3 +124,41 @@ body{
     font-weight: bolds;
     margin-top: 0;
 }
+
+
+
+/* Footer CSS style  */
+
+footer{
+    height: 200px;
+    background-color: #0a0826;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+footer p, small{
+    font-size: 14px;
+    color: #D9DBE1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.footer-icon{
+    cursor: pointer;
+    margin-top: 18px;
+
+}
+.footer-icon i{
+    margin: 0 15px;
+    font-size: 14px;
+    background-color: rgba(44, 44, 44, 0.363);;
+    padding: 10px;
+    border-radius: 50%;
+}
