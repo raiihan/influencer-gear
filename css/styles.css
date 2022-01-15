@@ -210,12 +210,29 @@ footer p, small{
 /* Media Query */
 /* Moble */
 @media only screen and (max-width:688px) {
+    
     .website-title h2{
         text-align: center;
     }
 
-    .banner{
+    .banner, .collections, .supports{
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .populer-title{
+        text-align: left;
+    }
+    .supports{
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .banner-details{
+        order: 2;
+        padding: 30px;
+    }
+    .banner-title{
+        font-size: 35px;
     }
 }
