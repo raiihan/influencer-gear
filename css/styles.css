@@ -218,15 +218,7 @@ footer p, small{
     .banner, .collections, .supports{
         display: grid;
         grid-template-columns: 1fr;
-    }
-    .populer-title{
-        text-align: left;
-    }
-    .supports{
-        display: flex;
-        flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        padding: 50px;
     }
     .banner-details{
         order: 2;
@@ -235,4 +227,40 @@ footer p, small{
     .banner-title{
         font-size: 35px;
     }
+    .banner-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .populer-title{
+        text-align: left;
+        padding-left: 50px;
+    }
+    .supports{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Tablet Media Queries */
+
+@media only screen and (min-width: 688px) and (max-width: 1030px) {
+    .website-title h2{
+        text-align: center;
+    }
+    .banner{
+        padding: 50px;
+    }
+    .banner-title{
+        font-size: 43px;
+    }
+    .collections, .supports{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+    }
+
 }
