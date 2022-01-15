@@ -86,7 +86,7 @@ body{
     width: 300px;
     height: 255px;
     border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden;;
 }
 .thumbnail img{
     width: 100%;
@@ -218,8 +218,23 @@ footer p, small{
         display: grid;
         grid-template-columns: 1fr;
         padding: 50px;
-        width: fit-content;
     }
+    
+    
+    .populer-collection, .supports, footer{
+        max-width: 660px;
+    }
+    .collections, .support, footer{
+        margin: 0 auto;
+    }
+    .collection{
+        width: 330px;
+        margin-left: 25px;
+    }
+    .support{
+        margin-top: 20px;
+    }
+
     .banner-details{
         order: 2;
         padding: 30px;
@@ -234,14 +249,25 @@ footer p, small{
     }
     
     .populer-title{
-        text-align: left;
+        text-align: center;
         padding-left: 50px;
     }
-    .supports{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 550px){
+    .populer-collection,  footer{
+        max-width:500px;
+    }
+    .collections, footer{
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 449px){
+    .populer-collection{
+        max-width:400px;
+    }
+    .collections{
+        margin: 0 auto;
     }
 }
 
